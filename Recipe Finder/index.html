@@ -1,0 +1,328 @@
+<!--function displayRestaurantAround() {
+    return new Promise((resolve, reject) => {
+      this.service.nearbySearch({
+        location: currentUserPosition,
+        radius: 5000,
+        types: ['restaurant']
+      }, (res) => {
+        resolve(res);
+      });
+    });
+  }
+  <!DOCTYPE html>
+  <html lang="en">
+      <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>DOCUMENT</title>
+      </head>
+
+      <body>
+        <script>        const data = null;
+
+const xhr = new XMLHttpRequest();
+xhr.withCredentials = true;
+
+xhr.addEventListener("readystatechange", function () {
+	if (this.readyState === this.DONE) {
+		console.log(this.responseText);
+	}
+});
+
+xhr.open("GET", "https://matchilling-chuck-norris-jokes-v1.p.rapidapi.com/jokes/search?query=%3CREQUIRED%3E");
+xhr.setRequestHeader("accept", "application/json");
+xhr.setRequestHeader("x-rapidapi-host", "matchilling-chuck-norris-jokes-v1.p.rapidapi.com");
+xhr.setRequestHeader("x-rapidapi-key", "3b6bbf2515mshc0884a2280be43cp1a582ejsn93c2700b62a7");
+
+xhr.send(data);
+console.log(readystatechange());
+</script>
+</body>
+</html>
+-->
+<!---
+<!DOCTYPE html>
+  <html lang="en">
+      <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>DOCUMENT</title>
+      </head>
+
+      <body>
+<div id="sawo-container" style="height: 300px; width: 300px;"></div>
+<script src="http://websdk.sawolabs.com/sawo.min.js"></script> <script> var config = { // should be same as the id of the container created on 3rd step containerID: "sawo-container", // can be one of 'email' or 'phone_number_sms' identifierType: "phone_number_sms", // Add the API key copied from 2nd step apiKey: "", // Add a callback here to handle the payload sent by sdk onSuccess: (payload) => { console.log(payload) }, }; var sawo = new Sawo(config); sawo.showForm(); </script>
+//content_copy
+      -->
+
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Recipe Finder</title>
+         <link rel="stylesheet" href="style.css">
+          <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+          
+      
+      </head>
+      <body bgcolor="sky blue" >
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">RECIPE FINDER</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    
+                  </ul>
+                  
+                </div>
+              </div>
+            </nav>
+      
+            <div class="container-fluid my-4 px-0">
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="pic1.jfif" class="d-block w-100 h-150" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="pic2.jfif" class="d-block w-100 h-150" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="pic3.jfif" class="d-block w-100 h-150" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+            </div>
+      
+      
+            <div class="container my-3">
+              <h2 class="my-4 text-center">Search for new recipes</h2>
+      
+              <div class="container">
+                <!-- <form>
+                  <label for="text">Type a name</label>
+                  <input type="text" id="text">
+                </form> -->
+                <B><I>WANNA TRY NEW RECIPES,THEN WHAT ARE YOU LOOKING<BR>
+                  RIGHT CLICK,PRESS INSPECT AND THEN CHECK CONSOLE FOR A LIST OF NEW RECIPES</I></B>
+        <button id="button4" >API2</button>
+        <p id="output"></p>
+        <script src="restaurant.js"></script>
+
+              </div>
+              <div class="container-fluid">
+                <h5><ul class="display"></ul></h5>
+                
+              </div>
+              
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="Images/pic5.jpg"d-block w-100" alt = "...">
+        
+                    <div class="card-body">
+                      <p class="card-text"><h5 align="center">Sticky Toffee Pudding Ultimate</h5>
+                        <div class="icon">
+                        <a href="#"><i class="fa fa-heart-o"></i></a>
+                        </div> </p>
+                      <div class="d-flex justify-content-between align-items-center">
+                          <!-- .............. -->
+                          <i class="fa fa-clock-o"> 15 Mins</i>
+                          <i class="fa fa-users"> Serves 2</i>
+                          <div class="stars">
+                            
+                               <a href="#"><i class="fa fa-star"></i></a>
+                               <a href="#"><i class="fa fa-star"></i></a>
+                               <a href="#"><i class="fa fa-star"></i></a>
+                               <a href="#"><i class="fa fa-star"></i></a>
+                               <a href="#"><i class="fa fa-star-o"></i></a>
+                            
+                         </div>
+
+                        <!-- ............. -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="Images/pic8.jpg"d-block w-100" alt = "...">
+        
+                    <div class="card-body">
+                      <p class="card-text"><h5 align="center">Mushroom & Chestnut Rotolo</h5> <div class="icon">
+                        <a href="#"><i class="fa fa-heart-o"></i></a>
+                        </div> </p>
+                      <div class="d-flex justify-content-between align-items-center">
+                          <!-- .............. -->
+                          <i class="fa fa-clock-o"> 45 Mins</i>
+                          <i class="fa fa-users"> Serves 4</i>
+
+                          <div class="stars">
+                            
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star-o"></i></a>
+                         
+                      </div>
+    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="Images/pic6.jpg"d-block w-100" alt = "...">
+        
+        
+                    <div class="card-body">
+                      <p class="card-text"><h5 align="center">Chicken Enchilada Casserole</h5>  <div class="icon">
+                        <a href="#"><i class="fa fa-heart-o"></i></a>
+                        </div> </p>
+                      <div class="d-flex justify-content-between align-items-center">
+                          <!-- .............. -->
+                          <i class="fa fa-clock-o"> 50 Mins</i>
+                          <i class="fa fa-users"> Serves 4</i>
+                          <div class="stars">
+                            
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star-o"></i></a>
+                         
+                      </div>
+    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col">
+                  <div class="card shadow-sm">
+                     <img src="Images/pic7.jpg"d-block w-100" alt = "...">
+        
+        
+                    <div class="card-body">
+                      <p class="card-text"><h5 align="center">Carrot Cake</h5>  <div class="icon">
+                        <a href="#"><i class="fa fa-heart-o"></i></a>
+                        </div> </p>
+                      <div class="d-flex justify-content-between align-items-center">
+                          <!-- .............. -->
+                          <i class="fa fa-clock-o"> 30 Mins</i>
+                          <i class="fa fa-users"> Serves 2</i>
+                          <div class="stars">
+                            
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star-o"></i></a>
+                         
+                      </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="Images/pic4.jpg"d-block w-100" alt = "...">
+        
+                    <div class="card-body">
+                      <p class="card-text"><h5 align="center">Creamy Avocado Soup</h5> <div class="icon">
+                        <a href="#"><i class="fa fa-heart-o"></i></a>
+                        </div> </p>
+                      <div class="d-flex justify-content-between align-items-center">
+                          <!-- .............. -->
+                          <i class="fa fa-clock-o"> 20 Mins</i>
+                          <i class="fa fa-users"> Serves 2</i>
+                          <div class="stars">
+                            
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star-o"></i></a>
+                         
+                      </div>
+               
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="Images/pic9.jpg"d-block w-100" alt = "...">
+        
+        
+                    <div class="card-body">
+                      <p class="card-text"><h5 align="center">Cheesy Potato Bake</h5> <div class="icon">
+                        <a href="#"><i class="fa fa-heart-o"></i></a>
+                        </div> </p>
+                      <div class="d-flex justify-content-between align-items-center">
+                          <!-- .............. -->
+                          <i class="fa fa-clock-o"> 30 Mins</i>
+                          <i class="fa fa-users"> Serves 4</i>
+                          <div class="stars">
+                            
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star-o"></i></a>
+                    
+                         
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      </div>
+      
+                   <!-- Footer Links -->
+                
+        <!-- Copyright -->
+        <footer>
+        <div class="footer-copyright text-center py-3">© 2021 Copyright:
+          <a href="index.html"> RecipeFinder.com</a>
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+              
+      
+         
+      
+          <!-- <script src="static/app.js"></script> -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+          
+      
+      </body>
+      </html>
